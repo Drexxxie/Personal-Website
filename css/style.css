@@ -41,6 +41,10 @@ button {
   width: 45px;
 }
 
+.links {
+  width: 60px;
+}
+
   a {
     font-family: 'Monserrat', sans-serif;
   }
