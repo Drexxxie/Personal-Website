@@ -94,4 +94,14 @@ header {
     z-index: 997;
     width: auto;
   }
+
+  @media only screen and (max-width: 768px) {
+    .bio, .bio1, .bio2, bio3 {
+        width: 100%;
+    }
+    .skills {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+  }
   
