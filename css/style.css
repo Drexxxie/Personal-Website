@@ -36,6 +36,10 @@ header {
     font-family: 'Monserrat', sans-serif;
   }
 
+  h3, p {
+    text-align: center;
+  }
+
 button {
   background-color: #333;
   width: 45px;
@@ -53,6 +57,7 @@ button {
     font-family: 'Monserrat', sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    text-align: center;
   }
 
   .intro {
