@@ -11,6 +11,47 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Monserrat', sans-serif;
     font-size: 3.5rem;
 }
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+  }
+  
+  .name {
+    margin-top: 20px;
+  }
+  
+  .contact {
+    margin-top: 20px;
+  }
+  
+  .experience {
+    margin-top: 20px;
+  }
+  
+  .education {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat', sans-serif;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-family: 'Monserrat', sans-serif;
+  }
+  
