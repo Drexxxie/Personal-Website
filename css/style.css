@@ -123,15 +123,18 @@ button {
 
     .intro {
       padding: 20px;
+      text-align: center;
     }
     
     .intro img {
       width: 150px;
+      text-align: center;
     }
 
     .skills article {  
       width: 100%;
       margin-bottom: 20px;
+      text-align: center;
     }
 
   }
