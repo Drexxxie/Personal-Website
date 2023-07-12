@@ -112,6 +112,10 @@ button {
 
   @media only screen and (max-width: 768px) {
 
+    button {
+      width: 50px;
+    }
+
     .intro {
       padding: 20px;
     }
