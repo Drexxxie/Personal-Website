@@ -36,6 +36,15 @@ header {
     font-family: 'Monserrat', sans-serif;
   }
 
+button {
+  background-color: #333;
+  width: 45px;
+}
+
+  a {
+    font-family: 'Monserrat', sans-serif;
+  }
+
   h2 {
     font-family: 'Monserrat', sans-serif;
     font-weight: bolder;
