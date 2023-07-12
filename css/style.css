@@ -95,13 +95,23 @@ header {
     width: auto;
   }
 
+   /* Add media query for mobile responsiveness */
+
   @media only screen and (max-width: 768px) {
-    .bio, .bio1, .bio2, bio3 {
-        width: 100%;
+
+    .intro {
+      padding: 20px;
     }
-    .skills {
-        padding-left: 16px;
-        padding-right: 16px;
+    
+    .intro img {
+      width: 150px;
     }
+
+    .skills article {  
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
   }
-  
+
+
