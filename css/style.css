@@ -1,5 +1,6 @@
 body {
-  background-image: url();
+  background-image: url(https://static.vecteezy.com/system/resources/previews/014/440/724/non_2x/black-background-with-line-curve-design-abstract-landscape-with-waves-dark-deep-black-dynamic-abstract-template-with-wavy-lines-banner-in-paper-cut-style-vector.jpg);
+  background-size: cover;
 }
 
 header {
@@ -80,7 +81,7 @@ button {
   .intro h1, 
   .intro p {
     margin: 10px 0;
-    color: #444;
+    color: black;
   }
 
   .skills article {
@@ -109,7 +110,7 @@ button {
     color: #f2f2f2;
     padding: 10px;
     text-align: center;
-    position: inherit;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
