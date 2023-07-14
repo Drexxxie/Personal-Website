@@ -7,7 +7,7 @@ header {
     background-color: #333;
     color: #f2f2f2;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     text-align: center;
     top: 0;
     left: 0;
@@ -48,6 +48,7 @@ header {
 button {
   background-color: #333;
   width: 45px;
+  text-align: center;
 }
 
 .links {
@@ -110,7 +111,7 @@ button {
     color: #f2f2f2;
     padding: 10px;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -128,26 +129,15 @@ button {
 
     .intro {
       padding: 20px;
-      text-align: center;
     }
     
     .intro img {
       width: 150px;
-      text-align: center;
     }
 
     .skills article {  
       width: 100%;
       margin-bottom: 20px;
-      text-align: center;
-    }
-
-    footer {
-      position: relative;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
     }
 
   }
