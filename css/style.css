@@ -1,8 +1,12 @@
+body {
+  background-image: url();
+}
+
 header {
     background-color: #333;
     color: #f2f2f2;
     padding: 20px;
-    position: relative;
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;
@@ -25,7 +29,7 @@ header {
     -o-transition: .3s ease all;
     -ms-transition: .3s ease all;
   }
-
+ 
   h1 {
     font-family: 'Monserrat', sans-serif;
     font-weight: bolder;
@@ -33,7 +37,7 @@ header {
 
   section {
     text-align: center;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Monserrat', sans-serif; 
   }
 
   h3, p {
@@ -105,7 +109,7 @@ button {
     color: #f2f2f2;
     padding: 10px;
     text-align: center;
-    position: relative;
+    position: inherit;
     bottom: 0;
     left: 0;
     right: 0;
