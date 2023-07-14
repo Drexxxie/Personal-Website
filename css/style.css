@@ -76,6 +76,7 @@ button {
     border-radius: 50%;
     width: 200px;
     margin-bottom: 20px; 
+    justify-content: center;
   }
   
   .intro h1, 
