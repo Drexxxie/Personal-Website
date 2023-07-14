@@ -81,18 +81,24 @@ button {
   .intro h1, 
   .intro p {
     margin: 10px 0;
-    color: black;
+    color: white;
+  }
+
+  .skills {
+    color: white;
+    text-align: center;
   }
 
   .skills article {
-    background-color: #f2f2f2;
+    background-color: #333;
+    color: white;
     padding: 20px;
     width: 15%;
     display: inline-block;
     margin: 0 2% 2% 0;
     vertical-align: top;
     box-shadow:  0 0 7px rgba(0,0,0,.1);
-    text-align: center;
+    justify-content: center;
 }
 
   .skills img {
@@ -124,7 +130,7 @@ button {
     body {
       justify-content: center;
     }
-    
+
     button {
       width: 55px;
     }
