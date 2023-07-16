@@ -14,6 +14,7 @@ header {
     right: 0;
     z-index: 998;
     width: auto;
+    
   }
   
   header nav a {
@@ -29,6 +30,7 @@ header {
     -moz-transition: .3s ease all;
     -o-transition: .3s ease all;
     -ms-transition: .3s ease all;
+    
   }
  
   h1 {
@@ -47,8 +49,8 @@ header {
 
 button {
   background-color: #333;
-  width: 45px;
-  text-align: center;
+  width: 2.5%;
+  margin-left: 10px;
 }
 
 .links {
@@ -134,7 +136,7 @@ button {
 
     button {
       width: 55px;
-    }
+    } 
 
     .intro {
       padding: 20px;
