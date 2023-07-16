@@ -1,106 +1,65 @@
-body {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/014/440/724/non_2x/black-background-with-line-curve-design-abstract-landscape-with-waves-dark-deep-black-dynamic-abstract-template-with-wavy-lines-banner-in-paper-cut-style-vector.jpg);
-    background-size: cover;
-    color: whitesmoke;
-  }
-  
-  .page_container {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Monserrat', sans-serif;
-    font-size: 3.5rem; 
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: 'Monserrat', sans-serif;
-  }
-  
-  .name_section {
-    margin-top: 20px; 
-  }
-  
-  .contact_section {
-    margin-top: 20px;
-  }
-  
-  .experience_section {
-    margin-top: 20px;
-  }
-  
-  .education_section {
-    margin-top: 20px; 
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Monserrat', sans-serif;
-  }
-  
-  li {
-    margin-bottom: 10px;
-    font-family: 'Monserrat', sans-serif; 
-  }
-  
-  /* Style the document body */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the header with name and title */  
-  .name h1 {
-    font-size: 48px;
-    font-weight: bold; 
-    margin-bottom: 5px;
-  }
-    
-  .name h2 {
-    font-size: 24px;
-    font-style: italic;
-    margin-top: 0;
-  }
-    
-  /* Style contact info */
-  .contact p {
-    margin: 5px 0; 
-  }
-    
-  /* Style headings */
-  h3 {
-    font-size: 20px;
-    margin: 25px 0 10px;
-  }
-    
-  /* Style unordered lists for experience and education */
-  ul {
-    margin-left: 20px;
-  }
-    
-  li {
-    margin-bottom: 10px;
-  }
-    
-  /* Media query for smaller screens */
-  @media (max-width: 600px) {
-    .name h1 {
-      font-size: 36px;
-    }
-      
-    .name h2 {
-      font-size: 18px;
-    }
-  }
-  
+:root{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/014/440/724/non_2x/black-background-with-line-curve-design-abstract-landscape-with-waves-dark-deep-black-dynamic-abstract-template-with-wavy-lines-banner-in-paper-cut-style-vector.jpg);
+  background-size: cover;
+}
+*{margin:0px; padding:0px; box-sizing: border-box; font-family: system-ui;}
+body{background: var(--background);}
+.col-div-3{width: 25%; float: left;}
+.col-div-7{width: 75%; float: left;}
+.col-div-4{width: 35%; float: left;}
+.col-div-8{width: 65%; float: left;}
+.col-div-6{width: 50%; float: left; position: relative;}
+.clearfix{clear: both;}
+.resume-main{width: 700px; height: 800px; 
+	background-color: whitesmoke;
+	margin: 50px auto;
+	box-shadow:5px 5px 5px 5px #54585d33;
+}
+.left-box{width: 35%; float: left; height: 700px;}
+.right-box{width: 65%; float: left; background-color: var(--white); height: 700px;
+	margin: 50px 0px; border-radius: 50px 0px 0px 50px; padding:30px 50px;
+	box-shadow: -7px 2px 15px 2px #54585d52;}
+.profile{width: 150px; height: 150px; border: 3px solid var(--white); 
+	padding: 7px; border-radius: 50%; margin: 20px auto;}
+.profile img{width: 100%; border-radius: 50%;}
+.content-box{    padding: 0px 40px 0px 45px;}
+.content-box h2{text-transform: uppercase;font-weight: 500;color: var(--white); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr1{border: none; height: 1px; background: var(--white); margin-top: 3px;}
+.p1{font-size: 11px;color: var(--white);letter-spacing: 1px;padding-top: 12px;}
+#progress {background: var(--process);background-color: black;border-radius: 13px;height: 8px;width: 100%;}
+#progress:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress1 {background: var(--process);background-color: black;border-radius: 13px;height: 8px;width: 50%;}
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+.content-box h3{font-size: 13px;text-transform: uppercase;letter-spacing: 1px;padding-top: 10px;
+    color: black;font-weight: 500;
+}
+.p2{font-size: 13px; margin-bottom: 5px; margin-top: 5px; color: var(--white);}
+.circle{color:var(--white); font-size: 14px!important; margin-top: 7px;}
+.circle1{color:var(--process); font-size: 14px!important; margin-top: 7px;}
+.in{background:var(--white);color: var(--one);padding: 8px;border-radius: 20px; font-size: 14px!important;}
+.inp{color: var(--white); font-size: 11px;}
+.col3{text-align: center;}
+h1{font-size: 50px; text-transform: uppercase; color: var(--black); line-height: 50px;}
+h1 span{color: var(--one);}
+.p3{letter-spacing: 4px;color: #54585d; font-weight: 500;}
+.heading{text-transform: uppercase;font-weight: 500;color: var(--one); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr2{border: none; height: 1px; background: var(--black); margin-top: 3px;}
+.p5{font-weight: 700;color: var(--black);}
+.span1{font-size: 12px;color: var(--black);}
+
