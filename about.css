@@ -1,7 +1,6 @@
 body {
     background-image: url(https://static.vecteezy.com/system/resources/previews/014/440/724/non_2x/black-background-with-line-curve-design-abstract-landscape-with-waves-dark-deep-black-dynamic-abstract-template-with-wavy-lines-banner-in-paper-cut-style-vector.jpg);
     background-size: cover;
-    background_attachment: fixed;
     color: whitesmoke;
   }
   
@@ -16,7 +15,6 @@ body {
   }
   
   body {
-    font_family: 'Monserrat', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -29,7 +27,7 @@ body {
   
   .name_section {
     margin-top: 20px; 
-  }0
+  }
   
   .contact_section {
     margin-top: 20px;
