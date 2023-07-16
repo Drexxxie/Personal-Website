@@ -136,7 +136,11 @@ button {
 
     button {
       width: 55px;
-    } 
+    }
+
+    .projects {
+      width: 70px;
+    }
 
     .intro {
       padding: 20px;
