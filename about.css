@@ -2,7 +2,7 @@
   background-image: url(https://static.vecteezy.com/system/resources/previews/014/440/724/non_2x/black-background-with-line-curve-design-abstract-landscape-with-waves-dark-deep-black-dynamic-abstract-template-with-wavy-lines-banner-in-paper-cut-style-vector.jpg);
   background-size: cover;
 }
-*{margin:0px; padding:0px; box-sizing: border-box; font-family: system-ui;}
+*{margin:0px; padding:0px; box-sizing: border-box;  font-family: system-ui;border-radius: 10%;}
 body{background: var(--background);}
 .col-div-3{width: 25%; float: left;}
 .col-div-7{width: 75%; float: left;}
@@ -11,40 +11,24 @@ body{background: var(--background);}
 .col-div-6{width: 50%; float: left; position: relative;}
 .clearfix{clear: both;}
 .resume-main{width: 700px; height: 800px; 
-	background-color: whitesmoke;
+	background-color: gray;
 	margin: 50px auto;
-	box-shadow:5px 5px 5px 5px #54585d33;
+	box-shadow:5px 10px 10px 5px #00000052;
 }
 .left-box{width: 35%; float: left; height: 700px;}
-.right-box{width: 65%; float: left; background-color: var(--white); height: 700px;
-	margin: 50px 0px; border-radius: 50px 0px 0px 50px; padding:30px 50px;
+.right-box{width: 65%; float: left; background-color: whitesmoke; height: 700px;
+	margin: 50px 0px; border-radius: 50px 50px 50px 50px; padding:30px 50px;
 	box-shadow: -7px 2px 15px 2px #54585d52;}
 .profile{width: 150px; height: 150px; border: 3px solid var(--white); 
 	padding: 7px; border-radius: 50%; margin: 20px auto;}
 .profile img{width: 100%; border-radius: 50%;}
-.content-box{    padding: 0px 40px 0px 45px;}
+.content-box{    padding: 0px 40px 0px 40px;}
 .content-box h2{text-transform: uppercase;font-weight: 500;color: var(--white); 
 	letter-spacing: 1px; font-size: 20px;}
 .hr1{border: none; height: 1px; background: var(--white); margin-top: 3px;}
 .p1{font-size: 11px;color: var(--white);letter-spacing: 1px;padding-top: 12px;}
 #progress {background: var(--process);background-color: black;border-radius: 13px;height: 8px;width: 100%;}
-#progress:after {
-    content: '';
-    display: block;
-    background: var(--white);
-    width: 50%;
-    height: 100%;
-    border-radius: 9px;
-}
 #progress1 {background: var(--process);background-color: black;border-radius: 13px;height: 8px;width: 50%;}
-#progress1:after {
-    content: '';
-    display: block;
-    background: var(--white);
-    width: 40%;
-    height: 100%;
-    border-radius: 9px;
-}
 .content-box h3{font-size: 13px;text-transform: uppercase;letter-spacing: 1px;padding-top: 10px;
     color: black;font-weight: 500;
 }
@@ -62,4 +46,12 @@ h1 span{color: var(--one);}
 .hr2{border: none; height: 1px; background: var(--black); margin-top: 3px;}
 .p5{font-weight: 700;color: var(--black);}
 .span1{font-size: 12px;color: var(--black);}
+.download {
+  text-align: center;
+}
 
+button {
+  background-color: #333;
+  width: 2.5%;
+  color: whitesmoke;
+}
