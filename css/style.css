@@ -5,6 +5,19 @@ body {
 background-size: cover;
 }
 
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.space {
+    padding: 20px;
+}
+
 .box {
     width: 450px;
     background: rgba(255, 255, 255, 0.2);
