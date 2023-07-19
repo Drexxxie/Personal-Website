@@ -61,4 +61,8 @@ button {
 		button {
 			width: 100px;
 		}
+
+		.download {
+			text-align: center;
+		}
 	}
