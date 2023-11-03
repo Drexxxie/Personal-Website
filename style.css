@@ -179,7 +179,7 @@ body {
     }
     
     .social-icons {
-        bottom: 64px; /* Adjusted bottom for mobile */
+        bottom: 128px; /* Adjusted bottom for mobile */
     }
     
     .social-icons li a {
@@ -195,6 +195,6 @@ body {
     }
     
     .profile-image h2 {
-        margin-bottom: 8px; /* Adjusted margin for mobile */
+        margin-bottom: 4px; /* Adjusted margin for mobile */
     }
 }
