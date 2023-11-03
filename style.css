@@ -160,6 +160,8 @@ body {
         flex-direction: column; /* Added */
         align-items: center; /* Added */
         justify-content: center; /* Added */
+        height: 50vh;
+        font-size: 8px;
     }
     
     .profile-wrapper {
@@ -181,7 +183,7 @@ body {
     }
     
     .social-icons li a {
-        font-size: 14px; /* Adjusted font-size for mobile */
+        font-size: 12px; /* Adjusted font-size for mobile */
         width: 32px; /* Adjusted width for mobile */
         height: 32px; /* Adjusted height for mobile */
         transform: translateY(16px); /* Adjusted translateY for mobile */
