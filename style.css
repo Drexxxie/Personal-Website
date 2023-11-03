@@ -22,8 +22,9 @@ body {
 }
 
 .profile-wrapper {
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    max-width: 450px; /* Added a max-width for responsiveness */
+    height: auto; /* Changed height to auto for responsiveness */
     position: relative;
 }
 
@@ -33,8 +34,9 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px; /* Added a max-width for responsiveness */
+    height: auto; /* Changed height to auto for responsiveness */
     border-radius: 16px;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -51,8 +53,8 @@ body {
 }
 
 .profile-image img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -62,7 +64,7 @@ body {
 }
 
 .profile:hover .profile-image {
-    transform: translateY(-104px);
+    transform: translateY(-30%); /* Adjusted translateY value for responsiveness */
     transition: all .9s;
 }
 
@@ -75,7 +77,9 @@ body {
     display: flex;
     gap: 12px;
     z-index: 3;
-    bottom: 164px;
+    bottom: 20px; /* Adjusted bottom value for responsiveness */
+    left: 50%; /* Added left value to center the icons horizontally */
+    transform: translateX(-50%); /* Added translateX to center the icons horizontally */
 }
 
 .social-icons li {
@@ -95,8 +99,8 @@ body {
     border: 1px solid #CDCDCD;
     border-radius: 8px;
     transition: .2s;
-    transform: translateY(32px);
-    opacity: 0;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .social-icons li a:hover {
@@ -113,26 +117,6 @@ body {
     color: white;
     transition: 0.8s;
     transform: rotateY(360deg);
-}
-
-.profile:hover .social-icons li a {
-    opacity: 1;
-}
-
-.profile:hover li:nth-child(1) a {
-    transition-delay: 0.1s;
-}
-
-.profile:hover li:nth-child(2) a {
-    transition-delay: 0.2s;
-}
-
-.profile:hover li:nth-child(3) a {
-    transition-delay: 0.3s;
-}
-
-.profile:hover li:nth-child(4) a {
-    transition-delay: 0.4s;
 }
 
 .profile-name {
@@ -152,4 +136,17 @@ body {
 
 .profile-image h2 {
     margin-bottom: 8px;
+}
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .profile-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        max-width: 100%;
+    }
 }
