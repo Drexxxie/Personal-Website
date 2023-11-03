@@ -185,7 +185,7 @@ body {
     .social-icons li a {
         font-size: 12px; /* Adjusted font-size for mobile */
         width: 32px; /* Adjusted width for mobile */
-        height: 40px; /* Adjusted height for mobile */
+        height: 32px; /* Adjusted height for mobile */
         transform: translateY(16px); /* Adjusted translateY for mobile */
     }
 
@@ -195,6 +195,6 @@ body {
     }
     
     .profile-image h2 {
-        margin-bottom: 4px; /* Adjusted margin for mobile */
+        margin-bottom: 6px; /* Adjusted margin for mobile */
     }
 }
