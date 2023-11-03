@@ -154,7 +154,7 @@ body {
     margin-bottom: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .profile-wrapper {
         width: 100%;
         max-width: 100%;
