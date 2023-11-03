@@ -179,7 +179,7 @@ body {
     }
     
     .social-icons {
-        bottom: 128px; /* Adjusted bottom for mobile */
+        bottom: 100px; /* Adjusted bottom for mobile */
     }
     
     .social-icons li a {
