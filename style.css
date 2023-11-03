@@ -155,8 +155,44 @@ body {
 }
 
 @media only screen and (max-width: 850px) {
-    .profile-wrapper, .profile, .profile-name, .profile-image {
-        width: 300px;
-        height: 300px;
+    body {
+        display: flex; /* Changed to flex */
+        flex-direction: column; /* Added */
+        align-items: center; /* Added */
+        justify-content: center; /* Added */
+    }
+    
+    .profile-wrapper {
+        width: 300px; /* Adjusted width for mobile */
+        height: 300px; /* Adjusted height for mobile */
+    }
+    
+    .profile-image img {
+        width: 300px; /* Adjusted width for mobile */
+        height: 300px; /* Adjusted height for mobile */
+    }
+    
+    .profile:hover .profile-image {
+        transform: translateY(-52px); /* Adjusted translateY for mobile */
+    }
+    
+    .social-icons {
+        bottom: 64px; /* Adjusted bottom for mobile */
+    }
+    
+    .social-icons li a {
+        font-size: 14px; /* Adjusted font-size for mobile */
+        width: 32px; /* Adjusted width for mobile */
+        height: 32px; /* Adjusted height for mobile */
+        transform: translateY(16px); /* Adjusted translateY for mobile */
+    }
+
+    .profile-name {
+        height: 76px; /* Adjusted height for mobile */
+        padding: 8px 10px; /* Adjusted padding for mobile */
+    }
+    
+    .profile-image h2 {
+        margin-bottom: 4px; /* Adjusted margin for mobile */
     }
 }
