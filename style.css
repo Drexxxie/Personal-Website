@@ -1,200 +1,88 @@
-:root {
-    --background: #2C2C2C;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-color: var(--background);
-    display: grid;
-    height: 100vh;
-    margin: 0px;
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    transition: background-color 0.3s ease;
 }
 
-.container {
-    margin: auto;
+.dark {
+    background-color: #111827;
+    color: #f3f4f6;
 }
 
-.profile-wrapper {
-    width: 450px;
-    height: 450px;
-    position: relative;
+.dark .bg-white {
+    background-color: #1f2937;
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+.dark .text-gray-700 {
+    color: #d1d5db;
+}
+
+.dark .text-gray-600 {
+    color: #9ca3af;
+}
+
+.dark .text-gray-800 {
+    color: #f3f4f6;
+}
+
+.dark .bg-gray-50 {
+    background-color: #1f2937;
+}
+
+.dark .border-gray-200 {
+    border-color: #374151;
+}
+
+.dark .border-gray-300 {
+    border-color: #374151;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+}
+
+.dark .hero-gradient {
+    background: #111827;
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.typewriter {
+    border-right: 3px solid;
+    white-space: nowrap;
     overflow: hidden;
-    width: 500px;
-    height: 500px;
-    border-radius: 16px;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    transition: 0.5s;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.profile .profile-image {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    background-color: var(--background);
-    transition: .5s;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-.profile-image img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
 }
 
-.profile:hover img {
-    opacity: 0.4;
-    transition: .5s;
+.floating {
+    animation: floating 3s ease-in-out infinite;
 }
 
-.profile:hover .profile-image {
-    transform: translateY(-104px);
-    transition: all .9s;
-}
-
-.profile:hover .profile-bio {
-    opacity: 0.9;
-}
-
-.social-icons {
-    position: absolute;
-    display: flex;
-    gap: 12px;
-    z-index: 3;
-    bottom: 150px;
-}
-
-.social-icons li {
-    list-style: none;
-}
-
-.social-icons li a {
-    position: relative;
-    display: block;
-    display: grid;
-    place-items: center;
-    background: #fff;
-    font-size: 23px;
-    font-weight: bold;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #CDCDCD;
-    border-radius: 8px;
-    transition: .2s;
-    transform: translateY(32px);
-    opacity: 0;
-}
-
-.social-icons li a:hover {
-    background: var(--background);
-    transition: .2s;
-}
-
-.social-icons li a svg {
-    color: var(--background);
-    transition: .2s;
-}
-
-.social-icons li a:hover svg {
-    color: white;
-    transition: 0.8s;
-    transform: rotateY(360deg);
-}
-
-.profile:hover .social-icons li a {
-    opacity: 1;
-}
-
-.profile:hover li:nth-child(1) a {
-    transition-delay: 0.1s;
-}
-
-.profile:hover li:nth-child(2) a {
-    transition-delay: 0.2s;
-}
-
-.profile:hover li:nth-child(3) a {
-    transition-delay: 0.3s;
-}
-
-.profile:hover li:nth-child(4) a {
-    transition-delay: 0.4s;
-}
-
-.profile-name {
-    bottom: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 106px;
-    padding: 12px 14px;
-    color: black;
-    text-align: left;
-}
-
-.profile:hover .profile-name {
-    background-color: #fff;
-}
-
-.profile-image h2 {
-    margin-bottom: 8px;
-}
-
-@media only screen and (max-width: 850px) {
-    body {
-        display: flex; /* Changed to flex */
-        flex-direction: column; /* Added */
-        align-items: center; /* Added */
-        justify-content: center; /* Added */
-        height: 50vh;
-        font-size: 8px;
-    }
-    
-    .profile-wrapper, .profile {
-        width: 300px; /* Adjusted width for mobile */
-        height: 300px; /* Adjusted height for mobile */
-    }
-    
-    .profile-image img {
-        width: 300px; /* Adjusted width for mobile */
-        height: 300px; /* Adjusted height for mobile */
-    }
-    
-    .profile:hover .profile-image {
-        transform: translateY(-52px); /* Adjusted translateY for mobile */
-    }
-    
-    .social-icons {
-        bottom: 100px; /* Adjusted bottom for mobile */
-    }
-    
-    .social-icons li a {
-        font-size: 12px; /* Adjusted font-size for mobile */
-        width: 32px; /* Adjusted width for mobile */
-        height: 32px; /* Adjusted height for mobile */
-        transform: translateY(16px); /* Adjusted translateY for mobile */
-    }
-
-    .profile-name {
-        height: 76px; /* Adjusted height for mobile */
-        padding: 8px 10px; /* Adjusted padding for mobile */
-    }
-    
-    .profile-image h2 {
-        margin-bottom: 4px; /* Adjusted margin for mobile */
-    }
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
