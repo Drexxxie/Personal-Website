@@ -228,7 +228,36 @@
         function toggleTheme() {
             html.classList.toggle('dark');
             localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            updateThemeIcons();
         }
+
+        function updateThemeIcons() {
+            // Desktop
+            const moonIcon = themeToggle.querySelector('.fa-moon');
+            const sunIcon = themeToggle.querySelector('.fa-sun');
+            if (html.classList.contains('dark')) {
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            } else {
+                moonIcon.classList.remove('hidden');
+                sunIcon.classList.add('hidden');
+            }
+            // Mobile
+            if (mobileThemeToggle) {
+                const moonIconMobile = mobileThemeToggle.querySelector('.fa-moon');
+                const sunIconMobile = mobileThemeToggle.querySelector('.fa-sun');
+                if (html.classList.contains('dark')) {
+                    moonIconMobile.classList.add('hidden');
+                    sunIconMobile.classList.remove('hidden');
+                } else {
+                    moonIconMobile.classList.remove('hidden');
+                    sunIconMobile.classList.add('hidden');
+                }
+            }
+        }
+
+        // Call once on load to set correct icon
+        updateThemeIcons();
         
         if (themeToggle) {
             themeToggle.addEventListener('click', toggleTheme);
