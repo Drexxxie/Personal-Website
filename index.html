@@ -276,25 +276,21 @@
                 mobileMenu.classList.toggle('hidden');
             });
         }
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu only if it is visible
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    });
                 });
-                
-                // Close mobile menu only if it is visible
-                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-        });
-            });
-        });
         const form = document.querySelector('form');
         const popup = document.getElementById('popup-message');
         const closePopup = document.getElementById('close-popup');
