@@ -1,5 +1,4 @@
-#Personal Website
-This repository contains a personal website that the owner, Drexxxie, is regularly updating to experiment and enhance its visual appeal. The website serves as a platform for newcomers to familiarize themselves with the world of open source and gain hands-on experience by contributing to the project.
+This repository contains a personal website that the owner, Drexxxie, regularly updates to experiment with and enhance its visual appeal. The website serves as a platform for newcomers to familiarize themselves with the open-source world and gain hands-on experience by contributing to the project.
 
 ### Main Function Points
 - Provide a platform for newcomers to learn and contribute to an open-source project
