@@ -4,6 +4,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8fafc;
     transition: background-color 0.3s ease;
+    margin: 0;
+    color: #22223b;
 }
 
 .dark {
@@ -87,13 +89,6 @@ body {
     100% { transform: translateY(0px); }
 }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f9; /* Your website's background */
-    color: #22223b;
-}
-
 header {
     background: #35424a;
     color: #ffffff;
@@ -123,15 +118,9 @@ h3 {
 
 footer {
     text-align: center;
-    padding: 18px 0;
-    background: #22223b;
-    color: #fff;
-    font-size: 0.95em;
-    border-radius: 0 0 18px 18px; /* Only bottom corners rounded */
-    margin: 0 auto;
-    max-width: 1100px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
-    margin-bottom: 32px; /* Add space below the footer */
+    padding: 2rem 1rem;
+    background-color: #111827;
+    color: #f3f4f6;
 }
 
 .container {
@@ -292,65 +281,65 @@ footer {
 }
 
 /* Dark Theme */
-body.dark-mode {
+.dark body {
     background: #181926;
     color: #e0e0e0;
 }
 
-body.dark-mode .container {
+.dark .container {
     background: #232946;
     box-shadow: 0 4px 32px rgba(0,0,0,0.3);
 }
 
-body.dark-mode .sidebar {
+.dark .sidebar {
     background: #121629;
     color: #e0e0e0;
 }
 
-body.dark-mode .sidebar h2,
-body.dark-mode .sidebar a {
+.dark .sidebar h2,
+.dark .sidebar a {
     color: #a6b1e1;
 }
 
-body.dark-mode .sidebar h1 {
+.dark .sidebar h1 {
     color: #fff;
 }
 
-body.dark-mode .sidebar .skills h3,
-body.dark-mode .sidebar .interests h3,
-body.dark-mode .sidebar .contact h3 {
+.dark .sidebar .skills h3,
+.dark .sidebar .interests h3,
+.dark .sidebar .contact h3 {
     color: #a6b1e1;
 }
 
-body.dark-mode .main-content {
+.dark .main-content {
     background: #232946;
     color: #e0e0e0;
 }
 
-body.dark-mode .main-content h3,
-body.dark-mode .main-content h4 {
+.dark .main-content h3,
+.dark .main-content h4 {
     color: #a6b1e1;
     border-bottom-color: #a6b1e1;
 }
 
-body.dark-mode section {
+.dark section {
     background: #232946;
     color: #e0e0e0;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-body.dark-mode footer {
+.dark footer {
     background: #121629;
     color: #e0e0e0;
     box-shadow: 0 4px 32px rgba(0,0,0,0.3);
 }
 
-body.dark-mode .download-btn {
+.dark .download-btn {
     background: #a6b1e1;
     color: #232946;
 }
 
-body.dark-mode .download-btn:hover {
+.dark .download-btn:hover {
     background: #5f6caf;
     color: #fff;
 }
