@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart To-Do List</title>
+    <link rel="stylesheet" href="todo-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-brain"></i> AI Smart To-Do List</h1>
+            <p class="subtitle">Intelligent task management with AI insights</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="200">
+                <button id="addBtn" class="add-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="ai-suggestions" id="aiSuggestions"></div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <button class="filter-btn" data-filter="high">High Priority</button>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number" id="totalTasks">0</div>
+                <div class="stat-label">Total Tasks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="completedTasks">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pendingTasks">0</div>
+                <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="productivityScore">0%</div>
+                <div class="stat-label">Productivity</div>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <div class="section-header">
+                <h2>Your Tasks</h2>
+                <div class="sort-options">
+                    <select id="sortSelect">
+                        <option value="priority" selected>Sort by Priority</option>
+                        <option value="date">Sort by Date</option>
+                        <option value="category">Sort by Category</option>
+                        <option value="alphabetical">Sort Alphabetically</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="tasks-container" id="tasksContainer">
+                <div class="empty-state" id="emptyState">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>No tasks yet!</h3>
+                    <p>Add your first task above to get started with AI-powered productivity.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ai-insights" id="aiInsights">
+            <h3><i class="fas fa-lightbulb"></i> AI Insights</h3>
+            <div class="insights-content" id="insightsContent">
+                <p>Add some tasks to get personalized AI insights and productivity tips!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task Template -->
+    <template id="taskTemplate">
+        <div class="task-item" data-id="">
+            <div class="task-checkbox">
+                <input type="checkbox" class="task-check">
+                <span class="checkmark"></span>
+            </div>
+            <div class="task-content">
+                <div class="task-text"></div>
+                <div class="task-meta">
+                    <span class="task-category"></span>
+                    <span class="task-priority"></span>
+                    <span class="task-date"></span>
+                </div>
+            </div>
+            <div class="task-actions">
+                <button class="edit-btn" title="Edit task">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="delete-btn" title="Delete task">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Task</h3>
+                <button class="close-btn" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="editTaskInput" placeholder="Task description">
+                <select id="editPrioritySelect">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <select id="editCategorySelect">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="health">Health</option>
+                    <option value="learning">Learning</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button id="saveEditBtn" class="save-btn">Save Changes</button>
+                <button id="cancelEditBtn" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="todo-script.js"></script>
+</body>
+</html>
